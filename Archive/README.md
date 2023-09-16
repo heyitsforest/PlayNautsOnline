@@ -14,6 +14,9 @@ If you have available storage, run the script and download as many versions as p
 - Put AwesomenautsArchiver.cmd and the Manifests folder in the root of the DepotDownloader folder
 - Run the .cmd script, choose your OS and enter username, password and 2fa if prompted.
 
+# Disclaimer: Use at Your Own Risk
+This software/repository is provided as-is, without warranties of any kind. The developers are not liable for any damages or issues arising from the use of this software. Use it at your own risk.
+
 # Thanks to
 Ronimo Games - for making Awesomenauts
 

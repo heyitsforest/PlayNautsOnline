@@ -40,13 +40,8 @@ if exist "%csvFilePath%" (
     del "%logFilePath%" 2>nul
 
     for /f "tokens=1,* delims=," %%a in (%csvFilePath%) do (
-        REM Get the first column (manifestId)
         set "manifestId=%%a"
-
-        REM Echo the result to the log file
         echo Downloading "-app !appId! -depot !depotId! -manifest !manifestId!" >> "%logFilePath%"
-
-
 	dotnet DepotDownloader.dll -app !appId! -depot !depotId! -manifest !manifestId! -username !username! -password !password! -dir depots/Awesomenauts/!os!/!manifestId! -remember-password
 
     )
@@ -54,7 +49,6 @@ if exist "%csvFilePath%" (
     echo CSV file not found: %csvFilePath%
 )
 
-REM Add a "pause" command to keep the CMD window open
 pause
 
 endlocal

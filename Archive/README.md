@@ -11,5 +11,7 @@ If you have available storage, run the script and download as many versions as p
 
 # Thanks to
 Ronimo Games - for making Awesomenauts
+
 The Nauts Community - for being you
+
 Mircip - for getting the manifest lists

@@ -8,3 +8,8 @@ When Awesomenauts is deleted from Steam, having more available builds may make i
 
 # How can I help?
 If you have available storage, run the script and download as many versions as possible. 
+
+# Thanks to
+Ronimo Games - for making Awesomenauts
+The Nauts Community - for being you
+Mircip - for getting the manifest lists

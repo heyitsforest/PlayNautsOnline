@@ -16,6 +16,8 @@ Rename your Awesomenauts folder (steam\steamapps\common) to, eg. Awesomenauts2,
 
 Move the downloaded folder depot_204301 (steam\steamapps\content\app_204300) to \steamapps\common and rename it to Awesomenauts
 
+Disable updates (Steam library - Right Click Awesomenauts - Properties - Updates - enable "Only update this game when I launch it" & "Never Allow Background Updates")
+
 Launch Awesomenauts through Steam (not via the .exe)
 
 Change the matchmaking region in the settings to worldwide

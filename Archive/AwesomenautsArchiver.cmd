@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
-echo https://github.com/heyitsforest/PlayNautsOnline
+echo "https://github.com/heyitsforest/PlayNautsOnline"
 
 set /p os="1. Linux, 2. Windows or 3. Mac? Enter (1/2/3): "
 
@@ -33,15 +33,20 @@ set /p password="Steam password: "
 
 pause
 
-set "logFilePath=AwesomenautsArchiver.log"
+set "logFilePath=logfile.txt"
 
 if exist "%csvFilePath%" (
 
     del "%logFilePath%" 2>nul
 
     for /f "tokens=1,* delims=," %%a in (%csvFilePath%) do (
+        REM Get the first column (manifestId)
         set "manifestId=%%a"
+
+        REM Echo the result to the log file
         echo Downloading "-app !appId! -depot !depotId! -manifest !manifestId!" >> "%logFilePath%"
+
+
 	dotnet DepotDownloader.dll -app !appId! -depot !depotId! -manifest !manifestId! -username !username! -password !password! -dir depots/Awesomenauts/!os!/!manifestId! -remember-password
 
     )
@@ -49,6 +54,7 @@ if exist "%csvFilePath%" (
     echo CSV file not found: %csvFilePath%
 )
 
+REM Add a "pause" command to keep the CMD window open
 pause
 
 endlocal
